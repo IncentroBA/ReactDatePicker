@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="incentro.reactdatepicker.ReactDatePicker" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>React Date Picker</name>
+    <description>A simple date picker that offers the possibility to formatted type a date and/or choose from a calendar.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="autoFocus" type="boolean" defaultValue="false">
+                <caption>Auto Focus</caption>
+                <description>Automatically focuses the input on mount.</description>
+            </property>
+            <property key="autoSelectToday" type="boolean" defaultValue="false">
+                <caption>Auto Select Today</caption>
+                <description>Use the currect date as initial date.</description>
+            </property>
+            <property key="showLeadingZeros" type="boolean" defaultValue="false">
+                <caption>Show Leading Zeros</caption>
+                <description>Start a date like 1 with 01.</description>
+            </property>
+            <property key="dateAttr" type="attribute">
+                <caption>Date Attribute</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="DateTime"/>
+                </attributeTypes>
+            </property>
+            <property key="readOnlyStyle" type="enumeration" defaultValue="control">
+                <caption>Read-only style</caption>
+                <description></description>
+                <enumerationValues>
+                    <enumerationValue key="control">control</enumerationValue>
+                    <enumerationValue key="text">text</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="onChangeAction" type="action">
+                <caption>On Change</caption>
+                <description>Action to be performed when the input value is changed</description>
+            </property>
+            <property key="dayPlaceholder" type="string" defaultValue="dd">
+                <caption>Day placeholder</caption>
+                <description></description>
+            </property>
+            <property key="monthPlaceholder" type="string" defaultValue="mm">
+                <caption>Month placeholder</caption>
+                <description></description>
+            </property>
+            <property key="yearPlaceholder" type="string" defaultValue="yyyy">
+                <caption>Year placeholder</caption>
+                <description></description>
+            </property>
+            <systemProperty key="Editability"/>
+            <systemProperty key="Label"/>
+            <systemProperty key="Visibility"/>
+        </propertyGroup>
+    </properties>
+</widget>

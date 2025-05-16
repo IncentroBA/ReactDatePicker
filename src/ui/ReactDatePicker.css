@@ -1,0 +1,60 @@
+.react-date-picker .react-date-picker__calendar {
+  z-index: 3;
+}
+
+.react-date-picker .react-date-picker__wrapper {
+  border: 0;
+}
+
+.react-date-picker .react-calendar__tile--now {
+  background-color: transparent;
+  color: var(--font-color-default, black);
+  position: relative;
+}
+
+.react-date-picker .react-calendar__tile--now::before {
+  background-color: var(--color-primary, black);
+  border-radius: 50%;
+  bottom: 4px;
+  content: '';
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 4px;
+}
+
+.react-date-picker .react-calendar__tile {
+  color: var(--rdp-text-color, black);
+}
+
+.react-date-picker .react-calendar__month-view__days__day--weekend {
+  color: var(--rdp-text-color-weekend, black);
+}
+
+.react-date-picker .react-calendar__tile--active:not(:enabled):hover,
+.react-date-picker .react-calendar__tile:enabled:hover {
+  background-color: var(--react-date-picker-hover, #e6e6e6);
+  color: var(--rdp-text-color, black);
+}
+
+.react-date-picker .react-calendar__tile--active,
+.react-date-picker .react-calendar__tile--active:enabled:hover,
+.react-date-picker .react-calendar__tile--active:enabled:focus {
+  background-color: var(--color-primary, black);
+  color: var(--text-color-primary, white);
+}
+
+.react-date-picker .react-calendar__tile--active::before {
+  background-color: var(--rdp-active-selected, white);
+}
+
+/* I only need this because Mendix always wants to put the :focus on the first 
+focusable element on the page. Needless to say that it's in the way here... */
+.react-date-picker .react-date-picker-faux-btn {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  opacity: .1;
+}
